@@ -1,5 +1,6 @@
 package com.example.mytwitter_backend.controller;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,6 +14,6 @@ public class HomeController {
 
     @GetMapping("/getUsers")
     public String home2(){
-        return "Hello User";
+        return "{\"name\":\"Bhupinder\"}";
     }
 }
